@@ -19,7 +19,7 @@ Here are the main ones you really need to know:
 
 Example: Bitcoin Core node.
 
--•• Light Nodes :
+-•• **Light Nodes** :
 
 - Keep only part of the data (like block headers, not full blocks).
 
@@ -27,7 +27,7 @@ Example: Bitcoin Core node.
 
 - Commonly used in mobile wallets or lightweight apps.
 
--•• Validator Nodes :
+-•• **Validator Nodes** :
 
 - Take part in approving and adding new blocks to the chain actively.
 
@@ -35,7 +35,7 @@ Example: Bitcoin Core node.
 
 - Usually require staking coins as a security deposit.
 
--•• Mining Nodes :
+-•• **Mining Nodes** :
 
 - Try to solve cryptographic puzzles (Proof-of-Work).
 
@@ -43,7 +43,7 @@ Example: Bitcoin Core node.
 
 - Basically a subset of full nodes with extra work.
 
--•• RPC Nodes :
+-•• **RPC Nodes** :
 
 “Remote Procedure Call” nodes - one of the most important ones.
 
@@ -55,7 +55,7 @@ They let apps talk to the blockchain by:
 
 Think of them as the gatekeepers between your app and the blockchain.
 
--•• Worker Nodes : 
+-•• **Worker Nodes** : 
 
 Worker nodes are nodes that Do the heavy lifting tasks in a network or perform actual tasks assigned to them, but don’t control the overall system.
 
