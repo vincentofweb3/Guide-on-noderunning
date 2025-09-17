@@ -1,20 +1,82 @@
 # Guide-on-noderunning
 This Guide is for every person who w'd like to start noderunning.
-![seek2](https://github.com/user-attachments/assets/043ada58-ca2f-4bc3-bf72-62c4f42097d7)
 
-c is zero-knowledge (ZK) hardware startup aims to provide hardware acceleration solutions for ZK proof protocols. Cysic team developed a FPGA prototype of multi-scalar multiplication (MSM), which is an important component within ZK protocols.
+𝗪𝗵𝗮𝘁 𝗮𝗿𝗲 𝗖𝗿𝘆𝗽𝘁𝗼 𝗡𝗼𝗱𝗲𝘀??
 
--> we can contribute to cysic testnet by running a prover or verifier node.
+Crypto nodes are basically computers that keep a blockchain running. They help check transactions, store the records, and make sure the network stays secure and up to date.
 
-Verifier - Most minimal requirement.
-Validator - Minimal requirements [although its permissioned].
-Prover - Highest requirement.
-Verifier Requirements :
-Mimimum Of 8GB RAM
-4 Cores CPU
-200GB Storage
-Linux PC Or VPS && MacOS supported.
-Kelpr and any EVM wallet (zerion or metamask recommended)
--> before you start create an evm wallet and export the private key to kelpr to get your evm cosmos type address.
+Types of Crypto Nodes??
 
-How to join the testnet
+Here are the main ones you really need to know:
+
+-•• **Full Nodes** :
+
+- This Full Node Stores the entire blockchain history.
+
+- Independently check and verify every transaction.
+
+- Enforce the blockchain’s rules (called consensus rules).
+
+Example: Bitcoin Core node.
+
+-•• Light Nodes :
+
+- Keep only part of the data (like block headers, not full blocks).
+
+- it Depends on full nodes to confirm transactions.
+
+- Commonly used in mobile wallets or lightweight apps.
+
+-•• Validator Nodes :
+
+- Take part in approving and adding new blocks to the chain actively.
+
+- Common in Proof-of-Stake systems (Ethereum 2.0, Solana).
+
+- Usually require staking coins as a security deposit.
+
+-•• Mining Nodes :
+
+- Try to solve cryptographic puzzles (Proof-of-Work).
+
+- Used in Bitcoin and older networks to create new blocks.
+
+- Basically a subset of full nodes with extra work.
+
+-•• RPC Nodes :
+
+“Remote Procedure Call” nodes - one of the most important ones.
+
+They let apps talk to the blockchain by:
+
+- Reading data (balances, blocks, transaction status).
+
+- Sending transactions (token transfers, contract calls).
+
+Think of them as the gatekeepers between your app and the blockchain.
+
+-•• Worker Nodes : 
+
+Worker nodes are nodes that Do the heavy lifting tasks in a network or perform actual tasks assigned to them, but don’t control the overall system.
+
+1)  In centralized tech
+
+- It Runs your apps or containers (e.g., Docker).
+
+- It Gets instructions from a master node (control plane).
+
+2)  In decentralized compute networks (like Gensyn, Akash, Render, Bittensor)
+
+- Run AI models, ML training, or GPU-heavy tasks.
+
+-> Example: Gensyn’s RL Swarm acts as worker nodes.
+
+3)  In blockchain validator systems (Polkadot, Cosmos, L2 rollups)
+
+- It Handle execution of transactions.
+
+- Generate zero-knowledge proofs.
+
+- Do tasks like sequencing, state updates, or fraud proofs.
+
+These are the core nodes you should know. There are others like storage nodes, but these are the essentials. 
